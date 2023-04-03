@@ -6,36 +6,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Estudio Guzman</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/images/favicon.ico"
+            type="image/x-icon"
+        />
+        <meta name="description" content="Estudio de abogados" />
+        <meta name="keywords" content="abogados estudio de abogados Tucuman" />
     </head>
     <body>
-        <section>
-            <nav>
-                <a href="#">Ubicacion</a>
-                <a href="#">Contacto</a>
+        <section class="face">
+            <nav class="nav">
+                <a
+                    href="https://goo.gl/maps/SLfE6LximsNWDqVp7"
+                    class="nav__item"
+                    target="_blank"
+                    >Ubicacion</a
+                >
+                <a href="#contacto" class="nav__item">Contacto</a>
             </nav>
-            <img
-                src="./assets/images/logo_definitivo.png"
-                alt="logo Estudio Guzman"
-            />
+            <div class="img__container">
+                <img
+                    src="./assets/images/Logo_Guzman_Oscuro.png"
+                    alt="logo Estudio Guzman"
+                    class="main__img"
+                />
+            </div>
         </section>
-        <section>
-            <h1>contactanos</h1>
-            <img src="./assets/images/bg-1.jpg" alt="imagen de fondo" />
-            <img src="./assets/logos-svg/map.svg" alt="mapa" />
-            <span>lamadrid 377 2do b</span>
-            <img src="./assets/logos-svg/phone.svg" alt="telefono" />
-            <span>+54 381 420 1446</span>
-            <form action="">
-                <label for="name">nombre</label>
-                <input type="text" />
-                <label for="apellido">apellido</label>
-                <input type="text" />
-                <label for="email">email</label>
-                <input type="text" />
-                <label for="mensaje">mensaje</label>
-                <textarea name="mensaje" id="mensaje"></textarea>
-                <button type="submit">contactanos</button>
-            </form>
-        </section>
+        <main class="contacto" id="contacto">
+            <h1 class="contact__title">contactanos.</h1>
+            <div class="container">
+                <div class="info">
+                    <img
+                        src="./assets/images/bg-1.jpg"
+                        alt="imagen de fondo"
+                        class="info__img"
+                    />
+                    <div class="map">
+                        <img
+                            src="./assets/logos-svg/map.svg"
+                            alt="mapa"
+                            class="logo"
+                            width="20px"
+                        />
+                        <span
+                            >lamadrid 377 2do
+                            b&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span
+                        >
+                        <img
+                            src="./assets/logos-svg/phone.svg"
+                            alt="telefono"
+                            class="logo"
+                            width="20px"
+                        />
+                        <span>+54 381 420 1446</span>
+                    </div>
+                </div>
+                <form action="" class="form">
+                    <div class="row">
+                        <div class="column">
+                            <label for="name">nombre</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div class="column">
+                            <label for="apellido">apellido</label>
+                            <input type="text" id="apellido" />
+                        </div>
+                    </div>
+                    <label for="email">email</label>
+                    <input type="text" id="email" />
+                    <label for="mensaje">mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <button type="submit">contactanos</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">&copy Westend Design</footer>
     </body>
 </html>

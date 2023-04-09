@@ -17,13 +17,23 @@
     <body>
         <section class="face">
             <nav class="nav">
-                <a
-                    href="https://goo.gl/maps/SLfE6LximsNWDqVp7"
-                    class="nav__item"
-                    target="_blank"
-                    >Ubicacion</a
-                >
-                <a href="#contacto" class="nav__item">Contacto</a>
+                <button>
+                    <a href="#contacto">contactanos</a>
+                    <svg
+                        stroke-width="4"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                        ></path>
+                    </svg>
+                </button>
             </nav>
             <div class="img__container">
                 <img
@@ -62,25 +72,29 @@
                         <span>+54 381 420 1446</span>
                     </div>
                 </div>
-                <form action="" class="form">
+                <form
+                    action="https://formsubmit.co/estudioguzmanyasociados@gmail.com"
+                    method="POST"
+                    class="form"
+                >
                     <div class="row">
                         <div class="column">
                             <label for="name">nombre</label>
-                            <input type="text" id="name" />
+                            <input type="text" id="name" name="name" />
                         </div>
                         <div class="column">
                             <label for="apellido">apellido</label>
-                            <input type="text" id="apellido" />
+                            <input type="text" id="apellido" name="apellido" />
                         </div>
                     </div>
                     <label for="email">email</label>
-                    <input type="text" id="email" />
+                    <input type="email" id="email" name="email" required />
                     <label for="mensaje">mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
                     <button type="submit">contactanos</button>
                 </form>
             </div>
         </main>
-        <footer class="footer">&copy Westend Design</footer>
+        <footer class="footer">&copy Westend Labs</footer>
     </body>
 </html>
